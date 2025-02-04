@@ -25,61 +25,83 @@
       body {
         background-image: url(./assets/images/background-desktop.png);
         color: white;
-        text-align: center;
+
         font-family: "Outfit", serif;
+      }
+      .content-wrapper {
+        margin: 50px auto;
+        text-align: center;
+      }
+      .subtitle {
+        font-weight: 100px;
+        word-spacing: 4px;
+      }
+      form {
+        text-align: left;
+        margin: 20px 400px;
+        display: block;
+      }
+      label {
+        font-size: 15px;
+        margin-bottom: 15px;
+        font-weight: 100;
       }
     </style>
   </head>
   <body>
     <!-- Form starts -->
-
-    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
-    <div class="subtitle">
-      Secure your spot at next year's biggest coding conference.
-    </div>
-
-    <form action="">
-      <label>Upload Avatar</label>
-      <div>
-        <input type="image" alt="Drag and drop or click to upload" />
+    <div class="content-wrapper">
+      <h1>
+        Your Journey to Coding Conf <br />
+        2025 Starts Here!
+      </h1>
+      <div class="subtitle">
+        Secure your spot at next year's biggest coding conference.
       </div>
-      <span> Upload your photo (JPG or PNG, max size: 500KB).</span>
-      <div>
-        <label for="">Full Name</label>
-        <div><input type="text" /></div>
+      <br />
+      <form action="">
+        <label>Upload Avatar</label>
+        <div>
+          <input type="image" alt="Drag and drop or click to upload" />
+        </div>
+        <span> Upload your photo (JPG or PNG, max size: 500KB).</span>
+        <div>
+          <label for="">Full Name</label>
+          <div><input type="text" /></div>
+        </div>
+        <div>
+          <label for="">Email Address</label>
+          <div><input type="text" placeholder="example@email.com" /></div>
+        </div>
+        <div>
+          <label for="">GitHub Username</label>
+          <div><input type="text" placeholder="@yourusername" /></div>
+        </div>
+        <input type="button" value="Generate My Ticket" />
+      </form>
+
+      <!-- Form ends -->
+
+      <!-- Generated tickets starts -->
+      <h1>Congrats, ***First Name, Last Name***! Your ticket is ready.</h1>
+      <div class="subtitle">
+        We've emailed your ticket to ***Email address*** and will send updates
+        in the run up to the event.
       </div>
-      <div>
-        <label for="">Email Address</label>
-        <div><input type="text" placeholder="example@email.com" /></div>
+      <main>
+        <h2>Coding Conf</h2>
+        <div>Jan 31, 2025 / Austin, TX</div>
+        <h3>Full Name</h3>
+        <div>GitHub user8</div>
+      </main>
+
+      <!-- Generated tickets ends -->
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
       </div>
-      <div>
-        <label for="">GitHub Username</label>
-        <div><input type="text" placeholder="@yourusername" /></div>
-      </div>
-      <input type="button" value="Generate My Ticket" />
-    </form>
-
-    <!-- Form ends -->
-
-    <!-- Generated tickets starts -->
-    <h1>Congrats, ***First Name, Last Name***! Your ticket is ready.</h1>
-    <div class="subtitle">
-      We've emailed your ticket to ***Email address*** and will send updates in
-      the run up to the event.
-    </div>
-    <main>
-      <h2>Coding Conf</h2>
-      <div>Jan 31, 2025 / Austin, TX</div>
-      <h3>Full Name</h3>
-      <div>GitHub user8</div>
-    </main>
-
-    <!-- Generated tickets ends -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
