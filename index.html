@@ -43,8 +43,21 @@
       }
       label {
         font-size: 15px;
-        margin-bottom: 15px;
+        line-height: 1.5;
         font-weight: 100;
+      }
+      input {
+        background-color: hsl(245, 19%, 30%);
+        width: 100%;
+      }
+      .upload-container {
+        text-align: center;
+        background-color: hsl(245, 19%, 30%);
+        border: dashed gray 1px;
+        border-radius: 5px;
+        color: #ccc;
+        height: 100px;
+        width: 100%;
       }
     </style>
   </head>
@@ -61,8 +74,16 @@
       <br />
       <form action="">
         <label>Upload Avatar</label>
-        <div>
-          <input type="image" alt="Drag and drop or click to upload" />
+        <div class="upload-container">
+          <label for="photo-input" class="upload-label">
+            <img
+              src="./assets/images/icon-upload.svg"
+              alt="Upload Icon"
+              class="upload-icon"
+            />
+            <p>Drag and drop or click to upload</p>
+          </label>
+          <input type="file" id="photo-input" hidden />
         </div>
         <span> Upload your photo (JPG or PNG, max size: 500KB).</span>
         <div>
