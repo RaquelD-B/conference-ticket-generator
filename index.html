@@ -38,8 +38,12 @@
       }
       form {
         text-align: left;
-        margin: 20px 400px;
+        width: 350px;
+        margin: 0 auto;
         display: block;
+      }
+      small {
+        padding-bottom: 25px;
       }
       label {
         font-size: 15px;
@@ -49,6 +53,10 @@
       input {
         background-color: hsl(245, 19%, 30%);
         width: 100%;
+        border: solid gray 1px;
+        border-radius: 5px;
+        line-height: 2;
+        margin: 3px auto 15px;
       }
       .upload-container {
         text-align: center;
@@ -58,6 +66,12 @@
         color: #ccc;
         height: 100px;
         width: 100%;
+      }
+      .ticket-generator-button {
+        background-color: hsl(7, 71%, 60%);
+        border: solid hsl(7, 71%, 60%) 1px;
+        font-weight: bold;
+        width: 101%;
       }
     </style>
   </head>
@@ -85,7 +99,7 @@
           </label>
           <input type="file" id="photo-input" hidden />
         </div>
-        <span> Upload your photo (JPG or PNG, max size: 500KB).</span>
+        <small> Upload your photo (JPG or PNG, max size: 500KB).</small>
         <div>
           <label for="">Full Name</label>
           <div><input type="text" /></div>
@@ -98,7 +112,13 @@
           <label for="">GitHub Username</label>
           <div><input type="text" placeholder="@yourusername" /></div>
         </div>
-        <input type="button" value="Generate My Ticket" />
+        <div>
+          <input
+            type="button"
+            value="Generate My Ticket"
+            class="ticket-generator-button"
+          />
+        </div>
       </form>
 
       <!-- Form ends -->
