@@ -125,6 +125,8 @@
             type="button"
             value="Generate My Ticket"
             class="ticket-generator-button"
+            id="submit-button"
+            onclick="generarTicket()"
           />
         </div>
       </form>
@@ -132,7 +134,7 @@
       <!-- Form ends -->
 
       <!-- Generated tickets starts -->
-      <h1>Congrats, ***First Name, Last Name***! Your ticket is ready.</h1>
+      <h1></h1>
       <div class="subtitle">
         We've emailed your ticket to ***Email address*** and will send updates
         in the run up to the event.
@@ -152,6 +154,13 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </div>
-    <script></script>
+    <script>
+      function generarTicket() {
+        let fullName = document.getElementById("full-name").value;
+        let email = document.getElementById("email-address");
+        let message = document.querySelector("h1");
+        message.innerHTML = `Congrats, ${fullName}! Your ticket is ready.`;
+      }
+    </script>
   </body>
 </html>
