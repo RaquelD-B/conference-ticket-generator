@@ -25,7 +25,6 @@
       body {
         background-image: url(./assets/images/background-desktop.png);
         color: white;
-
         font-family: "Outfit", serif;
       }
       .content-wrapper {
@@ -58,6 +57,11 @@
         line-height: 2;
         margin: 3px auto 15px;
       }
+      span {
+        font-size: 30px;
+        font-weight: 600;
+        word-spacing: 5px;
+      }
       .upload-container {
         text-align: center;
         background-color: hsl(245, 19%, 30%);
@@ -72,6 +76,15 @@
         border: solid hsl(7, 71%, 60%) 1px;
         font-weight: bold;
         width: 101%;
+      }
+      .ticket {
+        border: solid gray 1px;
+        width: 350px;
+        display: flex;
+        margin: 0 auto;
+      }
+      .ticket-date {
+        font-size: 15px;
       }
     </style>
   </head>
@@ -134,17 +147,22 @@
       <!-- Form ends -->
 
       <!-- Generated tickets starts -->
-      <h1></h1>
-      <div class="subtitle">
-        We've emailed your ticket to ***Email address*** and will send updates
-        in the run up to the event.
+
+      <div class="ticket">
+        <div class="ticket-content">
+          <div class="ticket-header">
+            <span>Coding conf</span>
+          </div>
+          <div class="ticket-date">Jan 31, 2025 / Austin, TX</div>
+          <div class="profile">
+            <img src="./assets/images/image-avatar.jpg" alt="profile-pic" />
+            <div class="profile-info">
+              <div class="profile-name">Jonatan Krisof</div>
+              <div class="profile-user-name">@jonatan</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <main>
-        <h2>Coding Conf</h2>
-        <div>Jan 31, 2025 / Austin, TX</div>
-        <h3>Full Name</h3>
-        <div>GitHub user8</div>
-      </main>
 
       <!-- Generated tickets ends -->
 
@@ -157,9 +175,12 @@
     <script>
       function generarTicket() {
         let fullName = document.getElementById("full-name").value;
-        let email = document.getElementById("email-address");
+        let email = document.getElementById("email-address").value;
         let message = document.querySelector("h1");
+        let details = document.querySelector(".subtitle");
         message.innerHTML = `Congrats, ${fullName}! Your ticket is ready.`;
+        details.innerHTML = `We've emailed your ticket to ${email} and will send updates
+        in the run up to the event.`;
       }
     </script>
   </body>
