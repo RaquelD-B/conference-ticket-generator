@@ -93,6 +93,16 @@
         padding: 20px;
         position: relative;
       }
+      .ticket {
+        position: relative;
+        background: linear-gradient(135deg, #2d2a4a, #514869);
+        padding: 20px;
+        border-radius: 15px;
+        width: 300px;
+        text-align: center;
+        color: white;
+      }
+
       .ticket::before,
       .ticket::after {
         content: "";
@@ -104,15 +114,13 @@
       }
 
       .ticket::before {
-        left: -20px;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 60px; /* Alineado a la derecha */
+        top: -20px; /* Posicionado arriba */
       }
 
       .ticket::after {
-        right: -20px;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 60px; /* Alineado a la derecha */
+        bottom: -20px; /* Posicionado abajo */
       }
 
       .ticket-content {
@@ -191,7 +199,7 @@
           />
         </div>
       </form>
-
+      <br /><br />
       <!-- Form ends -->
 
       <!-- Generated tickets starts -->
@@ -217,7 +225,8 @@
       </div>
 
       <!-- Generated tickets ends -->
-
+      <br />
+      <br />
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
