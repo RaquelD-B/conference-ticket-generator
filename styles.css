@@ -1,0 +1,128 @@
+body {
+  background-image: url(./assets/images/background-desktop.png);
+  color: white;
+  font-family: "Outfit", serif;
+}
+.content-wrapper {
+  margin: 50px auto;
+  text-align: center;
+}
+.subtitle {
+  font-weight: 100px;
+  word-spacing: 4px;
+}
+form {
+  text-align: left;
+  width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+small {
+  padding-bottom: 25px;
+}
+label {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+input {
+  background-color: hsl(245, 19%, 30%);
+  width: 100%;
+  border: solid gray 1px;
+  border-radius: 5px;
+  line-height: 2;
+  margin: 3px auto 15px;
+}
+span {
+  font-size: 30px;
+  font-weight: 600;
+  word-spacing: 5px;
+}
+.upload-container {
+  text-align: center;
+  background-color: hsl(245, 19%, 30%);
+  border: dashed gray 1px;
+  border-radius: 5px;
+  color: #ccc;
+  height: 100px;
+  width: 100%;
+}
+.ticket-generator-button {
+  background-color: hsl(7, 71%, 60%);
+  border: solid hsl(7, 71%, 60%) 1px;
+  font-weight: bold;
+  width: 101%;
+}
+.ticket {
+  border: solid gray 1px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    hsl(248, 70%, 10%),
+    hsl(245, 19%, 35%),
+    hsl(245, 15%, 58%)
+  );
+  width: 500px;
+  display: flex;
+  margin: 0 auto;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+}
+.ticket {
+  position: relative;
+  background: linear-gradient(135deg, #2d2a4a, #514869);
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.ticket::before,
+.ticket::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #10002b;
+  border-radius: 50%;
+}
+
+.ticket::before {
+  right: 60px; /* Alineado a la derecha */
+  top: -20px; /* Posicionado arriba */
+}
+
+.ticket::after {
+  right: 60px; /* Alineado a la derecha */
+  bottom: -20px; /* Posicionado abajo */
+}
+
+.ticket-content {
+  flex: 1;
+}
+.ticket-date {
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+.profile-pic {
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+  left: -40px;
+}
+.profile-info {
+  right: -98px;
+  position: relative;
+  top: -87px;
+  text-align: left;
+}
+.dashed-line {
+  position: absolute;
+  top: 20px;
+  bottom: 10px;
+  right: 77px;
+  width: 2px;
+  border-left: 1px dashed white;
+}
