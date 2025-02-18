@@ -108,14 +108,15 @@ span {
 }
 .profile-pic {
   border-radius: 10px;
-  width: 100px;
+  width: 80px;
   position: relative;
   left: -1px;
+  top: 25px;
 }
 .profile-info {
-  right: -98px;
+  right: -86px;
   position: relative;
-  top: -87px;
+  top: -25px;
   text-align: left;
 }
 .dashed-line {
@@ -124,7 +125,7 @@ span {
   bottom: 10px;
   right: 77px;
   width: 2px;
-  border-left: 1px dashed rgba(255, 255, 255, 0.4);
+  border-left: 6px dashed rgba(255, 255, 255, 0.4);
 }
 .ticket-number {
   writing-mode: vertical-rl;
@@ -132,17 +133,16 @@ span {
   left: 263px;
   bottom: 217px;
   color: rgba(255, 255, 255, 0.4);
+  bottom: 176px;
+  left: 420px;
 }
 .profile-name {
-  left: 10px;
-  position: relative;
-  top: 40px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
 }
 .profile-user-name {
-  left: 10px;
-  position: relative;
-  top: 40px;
   color: rgba(255, 255, 255, 0.4);
+  bottom: 25px;
+  position: relative;
+  left: 30px;
 }
