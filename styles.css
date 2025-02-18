@@ -74,8 +74,8 @@ span {
   background: linear-gradient(135deg, #2d2a4a, #514869);
   padding: 20px;
   border-radius: 15px;
-  width: 300px;
-  text-align: center;
+  width: 450px;
+  text-align: left;
   color: white;
 }
 
@@ -108,9 +108,9 @@ span {
 }
 .profile-pic {
   border-radius: 10px;
-  width: 50%;
+  width: 100px;
   position: relative;
-  left: -40px;
+  left: -1px;
 }
 .profile-info {
   right: -98px;
@@ -124,5 +124,25 @@ span {
   bottom: 10px;
   right: 77px;
   width: 2px;
-  border-left: 1px dashed white;
+  border-left: 1px dashed rgba(255, 255, 255, 0.4);
+}
+.ticket-number {
+  writing-mode: vertical-rl;
+  position: relative;
+  left: 263px;
+  bottom: 217px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.profile-name {
+  left: 10px;
+  position: relative;
+  top: 40px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.profile-user-name {
+  left: 10px;
+  position: relative;
+  top: 40px;
+  color: rgba(255, 255, 255, 0.4);
 }
