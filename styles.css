@@ -92,8 +92,12 @@ span {
   flex: 1;
 }
 .ticket-date {
-  font-size: 15px;
+  font-size: 12px;
   padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  word-spacing: 3.5px;
+  position: relative;
+  left: 48px;
 }
 .profile-pic {
   border-radius: 10px;
@@ -126,12 +130,13 @@ span {
   left: 420px;
 }
 .profile-name {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
+  text-transform: capitalize;
+  color: white;
 }
 .profile-user-name {
   color: rgba(255, 255, 255, 0.4);
   bottom: 25px;
   position: relative;
-  left: 30px;
+  left: 25px;
+  font-size: 13px;
 }
