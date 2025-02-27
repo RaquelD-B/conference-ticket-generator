@@ -13,7 +13,7 @@ body {
 }
 form {
   text-align: left;
-  width: 350px;
+  width: 450px;
   margin: 0 auto;
   display: block;
 }
@@ -53,23 +53,10 @@ span {
   font-weight: bold;
   width: 101%;
 }
+
 .ticket {
   border: solid gray 1px;
-  border-radius: 16px;
-  background: linear-gradient(
-    135deg,
-    hsl(248, 70%, 10%),
-    hsl(245, 19%, 35%),
-    hsl(245, 15%, 58%)
-  );
-  width: 500px;
   display: flex;
-  margin: 0 auto;
-  height: 200px;
-  padding: 20px;
-  position: relative;
-}
-.ticket {
   position: relative;
   background: linear-gradient(135deg, #2d2a4a, #514869);
   padding: 20px;
@@ -77,6 +64,8 @@ span {
   width: 450px;
   text-align: left;
   color: white;
+  height: 200px;
+  margin: 30px auto;
 }
 
 .ticket::before,
