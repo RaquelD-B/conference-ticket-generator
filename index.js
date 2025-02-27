@@ -25,6 +25,8 @@ function generarTicket() {
     alert("Por favor, completa todos los campos.");
     return;
   }
+  // Generar un número aleatorio para el ticket
+  const ticketNumber = "#" + Math.floor(100000 + Math.random() * 900000);
   // Crear el HTML del ticket
   const ticketHTML = `<div class="ticket">
       <div class="ticket-content">
@@ -47,7 +49,7 @@ function generarTicket() {
           </div>
         </div>
         <div class="dashed-line"></div>
-        <div class="ticket-number">125425</div>
+        <div class="ticket-number">${ticketNumber} </div>
       </div>
     </div>`;
 
