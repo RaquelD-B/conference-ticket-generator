@@ -1,3 +1,21 @@
+document.getElementById("photo-input").addEventListener("change", previewImage);
+
+let uploadedImageURL = "./assets/images/logo-full.svg"; // Imagen por defecto
+
+function previewImage(event) {
+  const file = event.target.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      uploadedImageURL = e.target.result; // Guardar la imagen en base64
+    };
+
+    reader.readAsDataURL(file);
+  }
+}
+
 function generarTicket() {
   let fullName = document.getElementById("full-name").value;
   let email = document.getElementById("email-address").value;
@@ -18,7 +36,7 @@ function generarTicket() {
         <div class="ticket-date">Jan 31, 2026 / Austin, TX</div>
         <div class="profile">
           <img
-            src="./assets/images/image-avatar.jpg"
+            src="${uploadedImageURL}"
             alt="profile-pic"
             class="profile-pic"
           />
