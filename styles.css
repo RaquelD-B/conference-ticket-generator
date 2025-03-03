@@ -3,6 +3,9 @@ body {
   color: white;
   font-family: "Outfit", serif;
 }
+h1 {
+  word-spacing: 7px;
+}
 .content-wrapper {
   margin: 50px auto;
   text-align: center;
@@ -10,15 +13,20 @@ body {
 .subtitle {
   font-weight: 100px;
   word-spacing: 4px;
+  font-weight: 100;
 }
 form {
   text-align: left;
-  width: 450px;
+  width: 300px;
   margin: 0 auto;
   display: block;
 }
 small {
   padding-bottom: 25px;
+  font-size: 8px;
+  padding-bottom: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  word-spacing: 5px;
 }
 label {
   font-size: 15px;
@@ -37,6 +45,19 @@ span {
   font-size: 30px;
   font-weight: 600;
   word-spacing: 5px;
+}
+.email-styling {
+  color: hsl(7, 71%, 60%);
+  font-size: 16px;
+}
+.info-icon {
+  position: relative;
+  bottom: -6px;
+}
+.full-name-styling {
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .upload-container {
   text-align: center;
@@ -139,4 +160,31 @@ span {
   position: relative;
   left: 25px;
   font-size: 13px;
+}
+.pattern-line {
+  position: absolute;
+  top: 344px;
+}
+.pattern-top {
+  position: absolute;
+  left: 817px;
+}
+.pattern-lines-background {
+  position: absolute;
+  top: 1px;
+  height: 745px;
+  width: 1444px;
+}
+.pattern-circle {
+  position: absolute;
+  top: 304px;
+  left: 752px;
+}
+.upload-icon {
+  position: relative;
+  bottom: -15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 3px;
 }
