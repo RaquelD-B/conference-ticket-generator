@@ -55,9 +55,9 @@ function generarTicket() {
 
   let message = document.querySelector("h1");
   let details = document.querySelector(".subtitle");
-  message.innerHTML = `Congrats, ${fullName}! Your ticket is ready.`;
-  details.innerHTML = `We've emailed your ticket to ${email} and will send updates
-        in the run up to the event.`;
+  message.innerHTML = `Congrats, <span class="full-name-styling">${fullName}!</span> <br /> Your ticket is ready.`;
+  details.innerHTML = `We've emailed your ticket to <br /> <span class="email-styling">${email}</span> and will send updates
+        in <br />the run up to the event.`;
 
   // Reemplazar el contenido de .content-wrapper
   document.querySelector("form").innerHTML = ticketHTML;
