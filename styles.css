@@ -18,6 +18,7 @@ h1 {
 form {
   text-align: left;
   width: 300px;
+  max-width: 100%;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -31,17 +32,17 @@ small {
   word-spacing: 5px;
 }
 label {
-  font-size: 15px;
+  font-size: 10px;
   line-height: 1.5;
   font-weight: 100;
 }
 input {
   background-color: hsl(245, 19%, 30%);
-  width: 100%;
+
   border: solid gray 1px;
   border-radius: 5px;
   line-height: 2;
-  margin: 3px auto 15px;
+  margin: 3px 0 15px;
   cursor: text;
   color: white; /* Para que el texto sea visible */
 }
@@ -69,19 +70,17 @@ span {
   color: transparent;
 }
 .upload-container {
+  display: block;
   text-align: center;
   background-color: hsl(245, 19%, 30%);
   border: dashed gray 1px;
   border-radius: 5px;
   color: #ccc;
-  height: 100px;
-  width: 100%;
+  height: 70px;
 }
 .ticket-generator-button {
   background-color: hsl(7, 71%, 60%);
-  border: solid hsl(7, 71%, 60%) 1px;
   font-weight: bold;
-  width: 101%;
 }
 
 .ticket {
@@ -158,6 +157,7 @@ span {
   color: rgba(255, 255, 255, 0.4);
   bottom: 176px;
   left: 420px;
+  max-width: 100%;
 }
 .profile-name {
   text-transform: capitalize;
@@ -183,10 +183,12 @@ span {
 .pattern-lines-background {
   position: absolute;
   top: 1px;
-  height: 745px;
-  width: 1444px;
+  max-width: 100%;
+  width: auto;
   pointer-events: none; /* Evita que bloquee clics */
   z-index: -1; /* Lo manda al fondo */
+  max-height: 100vh;
+  height: auto;
 }
 .pattern-circle {
   position: absolute;
@@ -195,9 +197,15 @@ span {
 }
 .upload-icon {
   position: relative;
-  bottom: -15px;
+  bottom: -8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: transparent;
   padding: 3px;
+}
+input,
+.ticket-generator-button {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 300px;
 }
