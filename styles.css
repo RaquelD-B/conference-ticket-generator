@@ -2,6 +2,9 @@ body {
   background-image: url(./assets/images/background-desktop.png);
   color: white;
   font-family: "Outfit", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 h1 {
   word-spacing: 7px;
@@ -9,6 +12,11 @@ h1 {
 .content-wrapper {
   margin: 50px auto;
   text-align: center;
+  flex: 1; /* Permite que el contenido crezca y empuje la atribución hacia abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .subtitle {
   font-weight: 100px;
@@ -51,8 +59,14 @@ span {
   font-weight: 600;
   word-spacing: 5px;
 }
+.attribution {
+  text-align: center;
+  margin-top: auto; /* Empuja la atribución hacia el fondo */
+  padding: 20px 0;
+}
 .attribution a {
   pointer-events: auto;
+  color: white;
 
   text-decoration: underline;
 }
@@ -81,6 +95,17 @@ span {
 .ticket-generator-button {
   background-color: hsl(7, 71%, 60%);
   font-weight: bold;
+}
+#ticket-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ticket {
+  width: 450px; /* Mantiene el tamaño del ticket */
+  text-align: center;
 }
 
 .ticket {
@@ -194,6 +219,10 @@ span {
   position: absolute;
   top: 304px;
   left: 752px;
+}
+
+.subtitle {
+  margin-bottom: 10px; /* Reduce el espacio entre subtítulo y ticket */
 }
 .upload-icon {
   position: relative;
