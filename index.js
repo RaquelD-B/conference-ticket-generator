@@ -20,14 +20,14 @@ function generarTicket() {
   let fullName = document.getElementById("full-name").value;
   let email = document.getElementById("email-address").value;
   let gitHubUserName = document.getElementById("user-name").value;
-  // Validar que los campos no estén vacíos
+
   if (!fullName || !email || !gitHubUserName) {
     alert("Por favor, completa todos los campos.");
     return;
   }
-  // Generar un número aleatorio para el ticket
+
   const ticketNumber = "#" + Math.floor(100000 + Math.random() * 900000);
-  // Crear el HTML del ticket
+
   const ticketHTML = `<div class="ticket">
       <div class="ticket-content">
         <div class="ticket-header">
@@ -37,11 +37,7 @@ function generarTicket() {
         </div>
         <div class="ticket-date">Jan 31, 2026 / Austin, TX</div>
         <div class="profile">
-          <img
-            src="${uploadedImageURL}"
-            alt="profile-pic"
-            class="profile-pic"
-          />
+          <img src="${uploadedImageURL}" alt="profile-pic" class="profile-pic" />
           <div class="profile-info">
             <div class="profile-name">${fullName}</div>
             <img src="./assets/images/icon-github.svg" alt="" />
@@ -49,16 +45,36 @@ function generarTicket() {
           </div>
         </div>
         <div class="dashed-line"></div>
-        <div class="ticket-number">${ticketNumber} </div>
+        <div class="ticket-number">${ticketNumber}</div>
       </div>
     </div>`;
 
+  // Actualizar el mensaje y los detalles
   let message = document.querySelector("h1");
   let details = document.querySelector(".subtitle");
   message.innerHTML = `Congrats, <span class="full-name-styling">${fullName}!</span> <br /> Your ticket is ready.`;
   details.innerHTML = `We've emailed your ticket to <br /> <span class="email-styling">${email}</span> and will send updates
         in <br />the run up to the event.`;
+  details.style.margin = "-13px auto -121px";
 
-  // Reemplazar el contenido de .content-wrapper
-  document.querySelector("form").innerHTML = ticketHTML;
+  // Ocultar el formulario
+  const form = document.querySelector("form");
+  form.style.display = "none";
+  form.style.position = "absolute"; // Lo saca del flujo del documento
+  form.style.height = "0";
+  form.style.margin = "0";
+  form.style.padding = "0";
+
+  // Asegurar que el ticket reemplace el formulario sin mover la atribución
+  let ticketContainer = document.getElementById("ticket-container");
+  if (!ticketContainer) {
+    ticketContainer = document.createElement("div");
+    ticketContainer.id = "ticket-container";
+    form.parentNode.insertBefore(
+      ticketContainer,
+      document.querySelector(".attribution")
+    );
+  }
+
+  ticketContainer.innerHTML = ticketHTML;
 }
