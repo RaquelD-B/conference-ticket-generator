@@ -32,7 +32,7 @@ function generarTicket() {
       <div class="ticket-content">
         <div class="ticket-header">
           <span>
-            <img src="./assets/images/logo-full.svg" alt="" />
+            <img src="./assets/images/logo-full.svg" alt="logo" class="ticket-logo" />
           </span>
         </div>
         <div class="ticket-date">Jan 31, 2026 / Austin, TX</div>
