@@ -46,7 +46,6 @@ label {
 }
 input {
   background-color: hsl(245, 19%, 30%);
-
   border: solid gray 1px;
   border-radius: 5px;
   line-height: 2;
@@ -67,7 +66,6 @@ span {
 .attribution a {
   pointer-events: auto;
   color: white;
-
   text-decoration: underline;
 }
 .email-styling {
@@ -103,10 +101,6 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.ticket {
-  width: 450px; /* Mantiene el tamaño del ticket */
-  text-align: center;
 }
 
 .ticket {
@@ -178,8 +172,6 @@ span {
 .ticket-number {
   writing-mode: vertical-rl;
   position: relative;
-  left: 263px;
-  bottom: 217px;
   color: rgba(255, 255, 255, 0.4);
   bottom: 176px;
   left: 420px;
@@ -251,6 +243,7 @@ input,
     background-size: cover; /* Asegura que cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
+    min-height: 0vh;
   }
   .pattern-lines-background {
     top: 0; /* Asegura que esté bien alineado */
@@ -265,5 +258,49 @@ input,
     transform: translateX(-50%); /* Ajusta el centrado */
     width: 80%; /* Ajusta el tamaño en móviles */
     max-width: 300px; /* Limita el ancho máximo */
+  }
+
+  .ticket {
+    width: 300px; /* Mantiene el tamaño del ticket */
+    height: 150px;
+    padding: 10px;
+    margin: 40px auto;
+  }
+
+  .ticket::before,
+  .ticket::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ticket-date {
+    font-size: 10px;
+    padding-bottom: 20px;
+    word-spacing: 7px;
+    left: 24px;
+  }
+  .profile-pic {
+    border-radius: 5px;
+    width: 40px;
+    top: 35px;
+  }
+  .profile-info {
+    right: -43px;
+    top: -11px;
+  }
+  .dashed-line {
+    top: 11px;
+    bottom: 11px;
+    right: 72px;
+    border-left: 2px dashed rgba(255, 255, 255, 0.4);
+  }
+  .ticket-number {
+    left: 260px;
+    bottom: 136px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .ticket-logo {
+    width: 150px;
   }
 }
