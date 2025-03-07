@@ -10,7 +10,7 @@ h1 {
   word-spacing: 7px;
 }
 .content-wrapper {
-  margin: 50px auto;
+  margin: 0px auto;
   text-align: center;
   flex: 1; /* Permite que el contenido crezca y empuje la atribución hacia abajo */
   display: flex;
@@ -83,6 +83,7 @@ span {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .upload-container {
   display: block;
   text-align: center;
@@ -237,4 +238,9 @@ input,
   box-sizing: border-box;
   max-width: 100%;
   width: 300px;
+}
+#logo {
+  max-width: 150px;
+  display: block;
+  margin: 30px auto 0;
 }
