@@ -238,12 +238,21 @@ input,
 }
 
 @media (max-width: 480px) {
+  html,
+  body {
+    height: 100%;
+    min-height: 100vh;
+  }
   body {
     background-image: url(./assets/images/background-mobile.png); /* Imagen optimizada */
-    background-size: cover; /* Asegura que cubra toda la pantalla */
+    background-size: cover; /* Tamaño fijo para móviles */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
-    min-height: 0vh;
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+  .content-wrapper {
+    padding: 0 10px; /* Reduce el padding en móviles */
   }
   .pattern-lines-background {
     top: 0; /* Asegura que esté bien alineado */
@@ -253,8 +262,8 @@ input,
   }
 
   .pattern-line {
-    top: 150px; /* Reduce la distancia desde arriba */
-    left: 50%; /* Centra horizontalmente si es necesario */
+    top: 495px;
+    left: 38%;
     transform: translateX(-50%); /* Ajusta el centrado */
     width: 80%; /* Ajusta el tamaño en móviles */
     max-width: 300px; /* Limita el ancho máximo */
@@ -262,7 +271,7 @@ input,
 
   .ticket {
     width: 300px; /* Mantiene el tamaño del ticket */
-    height: 150px;
+    min-height: 150px;
     padding: 10px;
     margin: 40px auto;
   }
