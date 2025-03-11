@@ -49,7 +49,6 @@ function generarTicket() {
       </div>
     </div>`;
 
-  // Actualizar el mensaje y los detalles
   let message = document.querySelector("h1");
   let details = document.querySelector(".subtitle");
   message.innerHTML = `Congrats, <span class="full-name-styling">${fullName}!</span> <br /> Your ticket is ready.`;
@@ -57,24 +56,23 @@ function generarTicket() {
         in <br />the run up to the event.`;
   details.style.margin = "-13px auto -121px";
 
-  // Ocultar el formulario
   const form = document.querySelector("form");
   form.style.display = "none";
-  form.style.position = "absolute"; // Lo saca del flujo del documento
+  form.style.position = "absolute";
   form.style.height = "0";
   form.style.margin = "0";
   form.style.padding = "0";
 
-  // Asegurar que el ticket reemplace el formulario sin mover la atribución
   let ticketContainer = document.getElementById("ticket-container");
   if (!ticketContainer) {
     ticketContainer = document.createElement("div");
     ticketContainer.id = "ticket-container";
-    form.parentNode.insertBefore(
+    document.body.insertBefore(
       ticketContainer,
       document.querySelector(".attribution")
     );
   }
 
   ticketContainer.innerHTML = ticketHTML;
+  ticketContainer.style.display = "flex"; // Asegurar que sea visible en móviles
 }
