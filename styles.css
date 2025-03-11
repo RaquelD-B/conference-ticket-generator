@@ -246,6 +246,10 @@ input,
     min-height: 100vh;
     overflow-y: hidden;
   }
+  h1 {
+    position: relative;
+    bottom: 60px;
+  }
   .content-wrapper {
     padding: 0 10px; /* Reduce el padding en móviles */
   }
@@ -269,6 +273,7 @@ input,
     max-height: 150px;
     padding: 10px;
     margin: 40px auto;
+    top: -65px;
   }
 
   .ticket::before,
