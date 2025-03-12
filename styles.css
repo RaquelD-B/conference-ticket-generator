@@ -250,6 +250,10 @@ input,
     position: relative;
     bottom: 60px;
   }
+  .subtitle {
+    margin: -61px auto -121px;
+    font-size: 17px;
+  }
   .content-wrapper {
     padding: 0 10px; /* Reduce el padding en móviles */
   }
