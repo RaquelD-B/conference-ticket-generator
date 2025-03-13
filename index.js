@@ -49,30 +49,20 @@ function generarTicket() {
       </div>
     </div>`;
 
-  let message = document.querySelector("h1");
-  let details = document.querySelector(".subtitle");
+  let message = document.querySelector(".message");
+  let details = document.querySelector(".details");
   message.innerHTML = `Congrats, <span class="full-name-styling">${fullName}!</span> Your ticket is ready.`;
-  details.innerHTML = `We've emailed your ticket to <span class="email-styling">${email}</span> and will send updates
-        in the run up to the event.`;
-  details.style.margin = "-13px auto -121px";
+  details.innerHTML = `We've emailed your ticket to <span class="email-styling">${email}</span> and will send updates in the run-up to the event.`;
 
   const form = document.querySelector("form");
   form.style.display = "none";
-  form.style.position = "absolute";
-  form.style.height = "0";
-  form.style.margin = "0";
-  form.style.padding = "0";
+
+  const h1 = document.querySelector("h1");
+  h1.style.display = "none";
+
+  const subtitle = document.querySelector(".subtitle");
+  subtitle.style.display = "none";
 
   let ticketContainer = document.getElementById("ticket-container");
-  if (!ticketContainer) {
-    ticketContainer = document.createElement("div");
-    ticketContainer.id = "ticket-container";
-    document.body.insertBefore(
-      ticketContainer,
-      document.querySelector(".attribution")
-    );
-  }
-
   ticketContainer.innerHTML = ticketHTML;
-  ticketContainer.style.display = "flex"; // Asegurar que sea visible en móviles
 }

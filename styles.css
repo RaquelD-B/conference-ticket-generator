@@ -247,15 +247,25 @@ input,
     overflow-y: hidden;
   }
   h1 {
-    position: relative;
-    bottom: 60px;
+    position: inherit;
+    margin: 30px auto 10px;
   }
   .subtitle {
-    margin: -61px auto -121px;
-    font-size: 17px;
+    position: inherit;
+    margin: 10px auto;
   }
+  .message {
+    font-size: 30px;
+    padding-top: 90px;
+  }
+  .details {
+    font-weight: 100;
+    padding-top: 20px;
+  }
+
   .content-wrapper {
-    padding: 0 10px; /* Reduce el padding en móviles */
+    padding: 20px;
+    max-height: 200px;
   }
   .pattern-lines-background {
     top: 0; /* Asegura que esté bien alineado */
@@ -276,7 +286,7 @@ input,
     width: 300px; /* Mantiene el tamaño del ticket */
     max-height: 150px;
     padding: 10px;
-    margin: 40px auto;
+    margin: 80px auto;
     top: -65px;
   }
 
@@ -323,7 +333,22 @@ input,
   .ticket-logo {
     width: 150px;
   }
+
+  #ticket-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    min-height: auto; /* Evita que se expanda innecesariamente */
+    z-index: 10;
+  }
   .attribution {
-    padding: -10px 0;
+    position: relative;
+    padding: 0;
+    bottom: 142px;
+    font-size: 13px;
   }
 }
