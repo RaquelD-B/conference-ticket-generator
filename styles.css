@@ -4,10 +4,13 @@ body {
   font-family: "Outfit", serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-height: 100dvh;
 }
 h1 {
   word-spacing: 7px;
+  margin-bottom: 0;
+  position: relative;
+  top: 20px;
 }
 .message {
   margin-top: 30px;
@@ -108,6 +111,7 @@ span {
 .ticket-generator-button {
   background-color: hsl(7, 71%, 60%);
   font-weight: bold;
+  color: hsl(248, 70%, 10%);
 }
 #ticket-container {
   margin-top: 20px;
@@ -205,7 +209,7 @@ span {
 }
 .pattern-line {
   position: absolute;
-  top: 344px;
+  top: 385px;
   pointer-events: none; /* Evita que bloquee clics */
   z-index: -1; /* Lo manda al fondo */
 }
@@ -259,16 +263,23 @@ input,
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
     min-height: 100vh;
-    overflow-y: hidden;
   }
   h1 {
-    position: inherit;
-    margin: 30px auto 10px;
+    margin: 0 auto 20px;
+  }
+  form {
+    bottom: 140px;
+    padding: 0px 10px;
+    max-width: 300px;
+  }
+  label {
+    font-size: 12px;
   }
   .subtitle {
-    position: inherit;
-    margin: 10px auto;
+    position: relative;
+    bottom: 150px;
   }
+
   .message {
     font-size: 30px;
     padding-top: 90px;
@@ -280,7 +291,6 @@ input,
 
   .content-wrapper {
     padding: 20px;
-    max-height: 200px;
   }
   .pattern-lines-background {
     top: 0; /* Asegura que esté bien alineado */
@@ -290,11 +300,10 @@ input,
   }
 
   .pattern-line {
-    top: 495px;
-    left: 38%;
-    transform: translateX(-50%); /* Ajusta el centrado */
-    width: 80%; /* Ajusta el tamaño en móviles */
-    max-width: 300px; /* Limita el ancho máximo */
+    left: -2%;
+    width: 80%;
+    max-width: 300px;
+    top: 104%;
   }
 
   .ticket {
