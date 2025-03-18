@@ -12,33 +12,7 @@ h1 {
   position: relative;
   top: 20px;
 }
-.message {
-  margin-top: 30px;
-  font-size: 35px;
-  font-weight: 600;
-  max-width: 400px;
-}
-.details {
-  font-size: 15px;
-  max-width: 350px;
-  margin-top: 20px;
-  font-weight: 100;
-  text-align: center;
-}
-.content-wrapper {
-  margin: 0px auto;
-  text-align: center;
-  flex: 1; /* Permite que el contenido crezca y empuje la atribución hacia abajo */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.subtitle {
-  font-weight: 100px;
-  word-spacing: 4px;
-  font-weight: 100;
-}
+
 form {
   text-align: left;
   width: 300px;
@@ -74,29 +48,80 @@ span {
   font-weight: 600;
   word-spacing: 5px;
 }
-.attribution {
+footer {
   text-align: center;
   margin-top: auto; /* Empuja la atribución hacia el fondo */
   padding: 20px 0;
+  position: relative;
+  top: 50px;
 }
-.attribution a {
+footer a {
   pointer-events: auto;
   color: white;
   text-decoration: underline;
 }
+.details {
+  font-size: 15px;
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+.content-wrapper {
+  margin: 0px auto;
+  text-align: center;
+  flex: 1; /* Permite que el contenido crezca y empuje la atribución hacia abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .email-styling {
   color: hsl(7, 71%, 60%);
   font-size: 16px;
-}
-.info-icon {
-  position: relative;
-  bottom: -6px;
 }
 .full-name-styling {
   background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
   -webkit-background-clip: text;
   color: transparent;
   font-size: 35px;
+}
+.info-icon {
+  position: relative;
+  bottom: -6px;
+}
+.message {
+  margin-top: 30px;
+  font-size: 35px;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+.subtitle {
+  font-weight: 100px;
+  word-spacing: 4px;
+  font-weight: 100;
+}
+.ticket {
+  display: flex;
+  position: relative;
+  width: 450px;
+  text-align: left;
+  color: white;
+  height: 200px;
+}
+
+.ticket-generator-button {
+  background-color: hsl(7, 71%, 60%);
+  font-weight: bold;
+  color: hsl(248, 70%, 10%);
+}
+
+.ticket-pattern {
+  position: absolute;
+  z-index: 0;
+  margin: 0 auto;
+  display: block;
 }
 
 .upload-container {
@@ -108,52 +133,13 @@ span {
   color: #ccc;
   height: 70px;
 }
-.ticket-generator-button {
-  background-color: hsl(7, 71%, 60%);
-  font-weight: bold;
-  color: hsl(248, 70%, 10%);
-}
+
 #ticket-container {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.ticket {
-  border: solid gray 1px;
-  display: flex;
-  position: relative;
-  background: linear-gradient(135deg, #2d2a4a, #514869);
-  padding: 20px;
-  border-radius: 15px;
-  width: 450px;
-  text-align: left;
-  color: white;
-  height: 200px;
-  margin: 0 auto 30px;
-  bottom: 70px;
-}
-
-.ticket::before,
-.ticket::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #10002b;
-  border-radius: 50%;
-}
-
-.ticket::before {
-  right: 60px; /* Alineado a la derecha */
-  top: -20px; /* Posicionado arriba */
-}
-
-.ticket::after {
-  right: 60px; /* Alineado a la derecha */
-  bottom: -20px; /* Posicionado abajo */
 }
 
 .ticket-content {
@@ -180,14 +166,7 @@ span {
   top: -25px;
   text-align: left;
 }
-.dashed-line {
-  position: absolute;
-  top: 20px;
-  bottom: 10px;
-  right: 77px;
-  width: 2px;
-  border-left: 6px dashed rgba(255, 255, 255, 0.4);
-}
+
 .ticket-number {
   writing-mode: vertical-rl;
   position: relative;
@@ -195,6 +174,12 @@ span {
   bottom: 176px;
   left: 420px;
   max-width: 100%;
+}
+.ticket-logo {
+  position: relative;
+  top: 15px;
+  left: 10px;
+  margin: 20px;
 }
 .profile-name {
   text-transform: capitalize;
@@ -314,12 +299,6 @@ input,
     top: -130px;
   }
 
-  .ticket::before,
-  .ticket::after {
-    width: 30px;
-    height: 30px;
-  }
-
   .ticket-date {
     font-size: 10px;
     padding-bottom: 20px;
@@ -343,12 +322,7 @@ input,
   .pattern-circle {
     display: none;
   }
-  .dashed-line {
-    top: 11px;
-    bottom: 11px;
-    right: 72px;
-    border-left: 2px dashed rgba(255, 255, 255, 0.4);
-  }
+
   .ticket-number {
     left: 87%;
     bottom: 87%;
@@ -370,7 +344,7 @@ input,
     min-height: auto; /* Evita que se expanda innecesariamente */
     z-index: 10;
   }
-  .attribution {
+  footer {
     position: relative;
     padding: 0;
     bottom: 142px;
