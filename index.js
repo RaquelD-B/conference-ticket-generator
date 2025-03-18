@@ -30,6 +30,7 @@ function generarTicket() {
 
   const ticketHTML = `<div class="ticket">
       <div class="ticket-content">
+      <img src="./assets/images/pattern-ticket.svg" alt="ticket-pattern" class="ticket-pattern">
         <div class="ticket-header">
           <span>
             <img src="./assets/images/logo-full.svg" alt="logo" class="ticket-logo" />
@@ -44,7 +45,7 @@ function generarTicket() {
             <div class="profile-user-name">${gitHubUserName}</div>
           </div>
         </div>
-        <div class="dashed-line"></div>
+       
         <div class="ticket-number">${ticketNumber}</div>
       </div>
     </div>`;
