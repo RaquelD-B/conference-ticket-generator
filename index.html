@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -24,17 +22,6 @@
   <body>
     <img src="./assets/images/logo-full.svg" alt="logo" id="logo" />
 
-    <img
-      src="./assets/images/pattern-squiggly-line-top.svg"
-      class="pattern-top"
-      alt=""
-    />
-    <img
-      src="./assets/images/pattern-lines.svg"
-      class="pattern-lines-background"
-      alt=""
-    />
-    <!-- Form starts -->
     <div class="content-wrapper">
       <h1>
         Your Journey to Coding Conf <br />
@@ -46,7 +33,8 @@
         Secure your spot at next year's biggest coding conference.
       </div>
       <br />
-      <form action="">
+      <!-- Form starts -->
+      <form>
         <label>Upload Avatar</label>
         <div class="upload-container">
           <label for="photo-input" class="upload-label">
@@ -62,7 +50,7 @@
         <img src="./assets/images/icon-info.svg" alt="" class="info-icon" />
         <small> Upload your photo (JPG or PNG, max size: 500KB).</small>
         <div>
-          <label for="">Full Name</label>
+          <label>Full Name</label>
           <div>
             <input
               type="text"
@@ -73,7 +61,7 @@
           </div>
         </div>
         <div>
-          <label for="">Email Address</label>
+          <label>Email Address</label>
           <div>
             <input
               type="text"
@@ -83,7 +71,7 @@
           </div>
         </div>
         <div>
-          <label for="">GitHub Username</label>
+          <label>GitHub Username</label>
           <div>
             <input type="text" placeholder="@yourusername" id="user-name" />
           </div>
@@ -98,16 +86,25 @@
           />
         </div>
       </form>
-      <br /><br />
-
       <!-- Form ends -->
-
-      <!-- Generated tickets starts -->
-
-      <!-- Generated tickets ends -->
-      <br />
-      <br />
     </div>
+    <div id="ticket-container"></div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by
+      <a href="https://github.com/RaquelD-B" target="_blank">Raquel Díaz</a>.
+    </div>
+    <img
+      src="./assets/images/pattern-squiggly-line-top.svg"
+      class="pattern-top"
+      alt=""
+    />
+    <img
+      src="./assets/images/pattern-lines.svg"
+      class="pattern-lines-background"
+      alt=""
+    />
     <img
       src="./assets/images/pattern-circle.svg"
       alt=""
@@ -118,13 +115,6 @@
       alt=""
       class="pattern-line"
     />
-    <div id="ticket-container"></div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by
-      <a href="https://github.com/RaquelD-B" target="_blank">Raquel Díaz</a>.
-    </div>
     <script src="index.js"></script>
   </body>
 </html>
