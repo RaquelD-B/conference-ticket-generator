@@ -41,7 +41,7 @@ function generarTicket() {
           <img src="${uploadedImageURL}" alt="profile-pic" class="profile-pic" />
           <div class="profile-info">
             <div class="profile-name">${fullName}</div>
-            <img src="./assets/images/icon-github.svg" alt="" />
+            <img src="./assets/images/icon-github.svg" class="icon-github" />
             <div class="profile-user-name">${gitHubUserName}</div>
           </div>
         </div>
