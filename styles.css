@@ -249,7 +249,7 @@ input,
     background-size: cover; /* Tamaño fijo para móviles */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
-    min-height: 100vh;
+    max-height: 50dvh;
   }
   h1 {
     margin: 0 auto 20px;
@@ -266,10 +266,14 @@ input,
     position: relative;
     bottom: 150px;
   }
+  .icon-github {
+    width: 20px;
+  }
 
   .message {
     font-size: 30px;
-    padding-top: 90px;
+    padding-top: 0px;
+    margin-top: 0;
   }
   .details {
     font-weight: 100;
@@ -282,7 +286,7 @@ input,
   .pattern-lines-background {
     top: 0; /* Asegura que esté bien alineado */
     width: 100vw; /* Se ajusta al ancho de la pantalla */
-    height: 100%; /* O puedes probar 50vh si es demasiado grande */
+    height: 50vh; /* O puedes probar 50vh si es demasiado grande */
     object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
   }
 
@@ -290,7 +294,8 @@ input,
     left: -2%;
     width: 80%;
     max-width: 300px;
-    top: 104%;
+    top: -158px;
+    position: relative;
   }
 
   .ticket {
@@ -307,32 +312,45 @@ input,
     word-spacing: 7px;
     left: 24px;
   }
+  .ticket-pattern {
+    max-width: 100%;
+  }
+  .profile-name {
+    font-size: 15px;
+  }
   .profile-pic {
     border-radius: 5px;
     max-width: 40px;
     max-height: 60px;
     top: 35px;
+    top: 5px;
+    left: -10px;
   }
   .pattern-top {
     left: 258px;
     max-width: 100px;
   }
   .profile-info {
-    right: -43px;
-    top: -11px;
+    right: -55px;
+    top: -60px;
+  }
+  .profile-user-name {
+    font-size: 12px;
   }
   .pattern-circle {
     display: none;
   }
 
   .ticket-number {
-    left: 87%;
-    bottom: 87%;
+    left: 94%;
+    bottom: 112%;
     color: rgba(255, 255, 255, 0.4);
   }
 
   .ticket-logo {
     width: 150px;
+    margin: 0;
+    top: 5px;
   }
 
   #ticket-container {
