@@ -196,7 +196,7 @@ footer a {
 }
 .pattern-line {
   position: absolute;
-  top: 385px;
+  top: 505px;
   pointer-events: none; /* Evita que bloquee clics */
   z-index: -1; /* Lo manda al fondo */
 }
@@ -249,13 +249,14 @@ input,
     background-size: cover; /* Tamaño fijo para móviles */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
-    max-height: 50dvh;
+    max-height: 100dvh;
   }
   h1 {
     margin: 0 auto 20px;
+    top: 60px;
   }
   form {
-    bottom: 140px;
+    bottom: -35px;
     padding: 0px 10px;
     max-width: 300px;
   }
@@ -264,7 +265,7 @@ input,
   }
   .subtitle {
     position: relative;
-    bottom: 150px;
+    bottom: -20px;
   }
   .icon-github {
     width: 20px;
@@ -286,16 +287,17 @@ input,
   .pattern-lines-background {
     top: 0; /* Asegura que esté bien alineado */
     width: 100vw; /* Se ajusta al ancho de la pantalla */
-    height: 50vh; /* O puedes probar 50vh si es demasiado grande */
+    height: 100dvh; /* O puedes probar 50vh si es demasiado grande */
     object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
   }
 
   .pattern-line {
-    left: -2%;
-    width: 80%;
-    max-width: 300px;
-    top: -158px;
+    left: -28%;
+    width: 100%;
+
+    top: -5px;
     position: relative;
+    transform: rotate(5deg);
   }
 
   .ticket {
