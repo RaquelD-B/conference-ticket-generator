@@ -248,12 +248,15 @@ input,
 
 @media (max-width: 480px) {
   body {
-    background-image: url(./assets/images/background-mobile.png); /* Imagen optimizada */
-    background-size: cover; /* Tamaño fijo para móviles */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repeticiones */
-    max-height: 100dvh;
-    max-height: 100%;
+    background-image: url(./assets/images/background-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Asegura que ocupe toda la pantalla */
+    width: 100vw; /* Asegura que cubra todo el ancho */
+
+    margin: 0; /* Evita márgenes no deseados */
+    padding: 0; /* Evita padding no deseado */
   }
   h1 {
     margin: 0 auto 20px;
@@ -296,11 +299,12 @@ input,
   }
 
   .pattern-line {
+    display: flex;
     left: -28%;
     width: 100%;
-    top: 20px;
-    position: relative;
-    transform: rotate(5deg);
+    position: absolute;
+    transform: rotate(42deg);
+    bottom: 100px;
   }
   .ticket-content {
     position: relative;
