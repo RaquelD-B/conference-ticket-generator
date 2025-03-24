@@ -30,7 +30,7 @@ small {
   word-spacing: 5px;
 }
 label {
-  font-size: 10px;
+  font-size: 15px;
   line-height: 1.5;
   font-weight: 100;
 }
@@ -59,6 +59,9 @@ footer a {
   pointer-events: auto;
   color: white;
   text-decoration: underline;
+}
+p {
+  font-size: 10px;
 }
 .details {
   font-size: 15px;
