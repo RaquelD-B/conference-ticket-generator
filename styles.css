@@ -5,6 +5,9 @@ body {
   display: flex;
   flex-direction: column;
   max-height: 100dvh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 h1 {
   word-spacing: 7px;
@@ -197,7 +200,7 @@ p {
 }
 .pattern-line {
   position: absolute;
-  top: 505px;
+  top: 315px;
   pointer-events: none; /* Evita que bloquee clics */
   z-index: -1; /* Lo manda al fondo */
 }
@@ -252,9 +255,6 @@ input,
     background-repeat: no-repeat;
     height: 100vh; /* Asegura que ocupe toda la pantalla */
     width: 100vw; /* Asegura que cubra todo el ancho */
-
-    margin: 0; /* Evita márgenes no deseados */
-    padding: 0; /* Evita padding no deseado */
   }
   h1 {
     margin: 0 auto 20px;
