@@ -113,6 +113,7 @@ p {
   text-align: left;
   color: white;
   height: 200px;
+  margin-bottom: 110px;
 }
 
 .ticket-generator-button {
@@ -265,6 +266,10 @@ input,
     padding: 0px 10px;
     max-width: 300px;
   }
+  footer {
+    padding: 0;
+    position: static;
+  }
   label {
     font-size: 12px;
   }
@@ -300,9 +305,9 @@ input,
     display: flex;
     left: -28%;
     width: 100%;
-    position: absolute;
-    transform: rotate(42deg);
-    bottom: 100px;
+    position: relative;
+    transform: rotate(18deg);
+    top: -72px;
   }
   .ticket-content {
     position: relative;
@@ -310,10 +315,10 @@ input,
   }
 
   .ticket {
-    width: 300px; /* Mantiene el tamaño del ticket */
+    width: 300px;
     max-height: 150px;
     padding: 10px;
-    margin: 80px auto;
+    margin: 70px auto 0px;
     top: -130px;
   }
 
