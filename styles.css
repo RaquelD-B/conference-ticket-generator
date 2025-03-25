@@ -50,10 +50,8 @@ span {
 }
 footer {
   text-align: center;
-  margin-top: auto; /* Empuja la atribución hacia el fondo */
   padding: 20px 0;
-  position: relative;
-  top: 200px;
+  position: initial;
 }
 footer a {
   pointer-events: auto;
@@ -376,11 +374,5 @@ input,
     position: relative;
     min-height: auto; /* Evita que se expanda innecesariamente */
     z-index: 10;
-  }
-  footer {
-    position: relative;
-    padding: 0;
-    bottom: 142px;
-    font-size: 13px;
   }
 }
