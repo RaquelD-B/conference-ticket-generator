@@ -268,7 +268,9 @@ input,
   }
   footer {
     padding: 0;
-    position: static;
+    position: relative;
+    bottom: 170px;
+    font-size: 12px;
   }
   label {
     font-size: 12px;
